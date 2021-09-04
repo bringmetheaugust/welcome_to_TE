@@ -2,7 +2,7 @@
 
 ## Description🧐
 
-###### [switch to russian documentation](./README.ru.md)
+###### [switch to the russian documentation](./README.ru.md)
 
 Test task for front-end developer position at [TileExpert](https://jobs.tile.expert/) company.
 

@@ -10,3 +10,7 @@
 ## TODO📝
 
 Make `ChildComponent`'s memoization works.
+
+## Conditions❗️
+
+ * without using class components

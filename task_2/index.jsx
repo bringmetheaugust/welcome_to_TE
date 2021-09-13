@@ -1,13 +1,13 @@
 import { useState, Fragment, memo } from 'react';
 
 const MainComponent = () => {
-    const [ _, update ] = useState(); // change state for force component rerendering and checking the result
+    const [ _, updateComponent ] = useState(); // change state for force component updating
 
     const makeLog = () => console.log('hi from MainComponent'); // function to make a log from MainComponent
 
     return (
         <Fragment>
-            <button onClick={update}>update MainComponent</button>
+            <button onClick={updateComponent}>update MainComponent</button>
             <ChildComponent makeLog={makeLog} />
         </Fragment>
     );
@@ -15,5 +15,5 @@ const MainComponent = () => {
 
 // memoized component
 const ChildComponent = memo(({ makeLog }) => (
-    <button onClick={makeLog}>click me</button>
+    <button onClick={makeLog}>say Hi from MainComponent</button>
 ));

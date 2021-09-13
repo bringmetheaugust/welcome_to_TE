@@ -4,9 +4,12 @@
 
 ## Description📌
 
-`MainComponent` creates `React.ref` and passes this `ref` as a `prop` to child component.    
-`ChildComponent` receives `ref` as a `prop` and uses it.
+`MainComponent` create `ref` for using and controll its `ChildComponent`.
 
 ## TODO📝
 
-Rebuild these components as a functional components.
+Rebuild `ChildComponent` as a functional component.
+
+## Conditions❗️
+
+ * `MainComponent`'s code shouldn't be changed

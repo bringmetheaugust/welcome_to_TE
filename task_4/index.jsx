@@ -3,15 +3,26 @@ import { Component, createRef } from 'react';
 class MainComponent extends Component {
     myRef = createRef(); // create simple ref
 
+    toggleChildVisibility = () => this.myRef.current.toggleButton(); // method to hide or show child component
+
     render() {
-        return <ChildComponent myRef={this.myRef} />; // pass ref as a prop
+        return (
+            <>
+                <button onClick={this.toggleChildVisibility}>toggle child component</button>
+                <ChildComponent ref={this.myRef} />  {/* set ref for controlling child component */}
+            </>
+        );
     }
 };
 
 class ChildComponent extends Component {
+    state = { isActive: true };
+
+    toggleButton = () => this.setState({ isActive: !this.state.isActive });
+
     render() {
         return (
-            <button ref={this.props.myRef}>button with ref</button> // receive ref and set it to the button
+            this.state.isActive ? <div>child component</div> : null
         );
     }
 };

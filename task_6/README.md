@@ -4,7 +4,7 @@
 
 ## TODO📝
 
-Develop method that takes `tileArr` and return `IResult` object with a following properties:
+Develop function/method that takes `tileArr` and return `IResult` object with a following properties:
 
  * `totalPriceSum` summary price of all active tiles
  * `tileCount` summary active tile's amount

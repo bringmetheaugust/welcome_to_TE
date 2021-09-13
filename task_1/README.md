@@ -4,12 +4,13 @@
 
 ## Description📌
 
-`ChildComponent` always makes rerendering(updating) even if the `props` haven't changed.
+`FirstComponent` and `SecondComponent` always make rerendering(updating), **even** if their `props.name` values haven't changed.
 
 ## TODO📝
 
-Fix (or prevent) this wortless rerendering.
+Fix (or prevent) this wortless rerendering(updating) for both components then their `props.name` values haven't changed.
 
 ## Conditions❗️
 
- * without using class components
+ * `FirstComponent` must remain a functional component
+ * `SecondComponent` must remain a class component

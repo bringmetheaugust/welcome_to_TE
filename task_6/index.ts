@@ -5,9 +5,9 @@ interface ITile {
 }
 
 interface IResult {
-  totalPriceSum: number, // summary price of all active tiles
-  tileCount: number      // summary active tile's amount
-  averagePriceSum: number     // average price amount of all active tiles
+  totalPriceSum: number,   // summary price of all active tiles
+  tileCount: number        // summary active tile's amount
+  averagePriceSum: number  // average price amount of all active tiles
 }
 
 // array of available tiles

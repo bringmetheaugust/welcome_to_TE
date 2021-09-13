@@ -4,12 +4,12 @@
 
 ## Description📌
 
-`MainComponent` doesn't receive incoming props and it always has a default props.    
-`ChildComponent` is memoized by `React.memo` *HOC*, but this memoization is not working cause `ChildComponent` still always makes rererndering(updating) even if its `props` values haven't changed.
+`MainComponent` has default `props`.    
+`ChildComponent` is memoized by `React.memo` *HOC*, but this memoization doesn't work when `ChildComponent` always receives `MainComponent`'s default `props`.
 
 ## TODO📝
 
-Make `ChildComponent`'s memoization works.
+Make `ChildComponent`'s memoization works **even when `ChildComponent` receives `MainComponent`'s default `props`**
 
 ## Conditions❗️
 

@@ -1,15 +1,13 @@
 # Task 4
 
-###### [switch to the the russian documentation](./README.ru.md)
+## Описание📌
 
-## Description📌
+`MainComponent` создает `ref` чтобы использовать и контролировать дочерний комопнент `ChildComponent`.
 
-`MainComponent` create `ref` for using and controll its `ChildComponent`.
+## Задание📝
 
-## TODO📝
+Переделайте `ChildComponent` на функциональный компонент.
 
-Rebuild `ChildComponent` as a functional component.
+## Условия❗️
 
-## Conditions❗️
-
- * `MainComponent`'s code shouldn't be changed
+ * `MainComponent` должен оставаться неизменным.

@@ -1,17 +1,15 @@
 # Task 5
 
-###### [switch to the the russian documentation](./README.ru.md)
+## Описание📌
 
-## Description📌
+`MainComponent` подписан на `userData` селектор.    
+`MainComponent` перерисовывается каждый раз, когда обновляется состояние, **даже** когда мы обновляем `isOnline` селектор, а `userData` остается неизменным.
 
-`MainComponent` subscribed on *Redux* `userData` selector.    
-`MainComponent` always makes rerendering(updating) when the state changes, **even** if **only** the `isOnline` selector has changed and `userData` selector remains unchanged.
+## Задание📝
 
-## TODO📝
+Исправьте код таким образом, чтобы `MainComponent` обновлялся **только тогда**, когда меняется `userData` селектор.
 
-Rebuild the code so that the `MainComponent` should be updated **only when** the `userData` selector changes.
+## Условия❗️
 
-## Conditions❗️
-
- * don't change *Redux* state object model
- * `MainComponent` should be still subscribed only on `userData` selector
+ * модель состояния *Redux* менять нельзя
+ * `MainComponent` должен быть подписан на только на `userData` селектор (как и в коде задания)

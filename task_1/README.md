@@ -1,16 +1,14 @@
 # Task 1
 
-###### [switch to the russian documentation](./README.ru.md)
+## Описание📌
 
-## Description📌
+`FirstComponent` и `SecondComponent` всегда перерисовываются, **даже** если их `props.name` значение не меняется.
 
-`FirstComponent` and `SecondComponent` always make rerendering(updating), **even** if their `props.name` values haven't changed.
+## Задание📝
 
-## TODO📝
+Избавьтесь от ненужной (лишней/избыточной) перерисовки у компонентов, когда их `props.name` значения не меняется.
 
-Fix (or prevent) this wortless rerendering(updating) for both components then their `props.name` values haven't changed.
+## Условия❗️
 
-## Conditions❗️
-
- * `FirstComponent` must remain a functional component
- * `SecondComponent` must remain a class component
+ * `FirstComponent` должен оставаться функциональным компонентом
+ * `SecondComponent` должен оставаться классовым компонентом

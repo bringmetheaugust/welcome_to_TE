@@ -1,20 +1,18 @@
 # Welcome to TileExpert
 
-## Description🧐
+## Описание
 
-###### [switch to the russian documentation](./README.ru.md)
-
-Test task for front-end developer position at [TileExpert](https://jobs.tile.expert/) company.
+Тестовое задание на позицию front-end разработчика в [TileExpert](https://jobs.tile.expert/) компанию.
 
 ## TODO🖊
 
- * `fork` this repository
- * make **all** tasks by Youself (just edit task's files)
- * pin Your `forked` repository link to Your [questionnaire](https://jobs.tile.expert/en-us/front-end-react-developer)
+ * `fork` этот репозиторий
+ * выполнить **все** задания (просто отредактируйте файлы с тестовыми задачами)
+ * прикрепите ссылку на Ваш `forked` репозиторий в Вашу [анкету](https://jobs.tile.expert/ru/front-end-react-developer)
 
-## Links🔖
+## Ссылки🔖
 
- * [Our jobs site](https://jobs.tile.expert)
- * [Our product site](https://tile.expert)
+ * [Сайт компании](https://jobs.tile.expert/ru)
+ * [Наш продукт (сайт)](https://tile.expert/ru)
 
-###### **P.S**: if you have questions about the tasks or You have found some errors, You can create *Issue* or *PullRequest* with a detailed description of the question or problem. Thanks for You attention!
+###### **P.S**: если у Вас есть вопросы по поводу тестового задания или Вы нашли некоторые ошибки, Вы можете создать *Issue* или *PullRequest* с подробным описанием вопроса или проблемы. Благодарим за Ваше внимание!

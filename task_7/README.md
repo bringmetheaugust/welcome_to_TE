@@ -1,12 +1,10 @@
 # Task 7
 
-###### [switch to the the russian documentation](./README.ru.md)
+## Описание📌
 
-## Description📌
+Оба компонента имеют много общего, а именно одинаковую логику.    
+Отличаются они только входящими `props` и результатом рендеринга(отрисовки).     
 
-Both components have the same logic.    
-They only have a different `props` and rendering results. 
+## Задание📝
 
-## TODO📝
-
-Optimize this code.
+Оптимизируйте код.

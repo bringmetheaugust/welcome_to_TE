@@ -1,15 +1,13 @@
 # Task 2
 
-###### [switch to the the russian documentation](./README.ru.md)
+## Описание📌
 
-## Description📌
+`ChildComponent` мемоизирован, но мемоизация не работает, так как компонент всё равно перерисовывается каждый раз, когда обновляется родительский компонент (`MainComponent`).
 
-`ChildComponent` is memoized by `React.memo` *HOC*, but this memoization is not working cause `ChildComponent` still always makes rererndering(updating).
+## Задание📝
 
-## TODO📝
+Поправьте код, чтобы мемоизация работала.
 
-Make `ChildComponent`'s memoization works.
+## Условия❗️
 
-## Conditions❗️
-
- * without using class components
+ * не использовать классовые компоненты

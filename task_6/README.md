@@ -1,11 +1,9 @@
 # Task 6
 
-###### [switch to the the russian documentation](./README.ru.md)
+## Задание📝
 
-## TODO📝
+Написать функцию/метод, который принимает массив `tileArr` и возвращает объект типа `IResult`, в котором:
 
-Develop function/method that takes `tileArr` and return `IResult` object with a following properties:
-
- * `totalPriceSum` summary price of all active tiles
- * `tileCount` summary active tile's amount
- * `averagePriceSum` average price amount of all active tiles
+ * `totalPriceSum` суммированная цена всех активных плиток
+ * `tileCount` количество всех активных плиток
+ * `averagePriceSum` средная арифметическая цена всех активных плиток

@@ -1,16 +1,14 @@
 # Task 3
 
-###### [switch to the the russian documentation](./README.ru.md)
+## Описание📌
 
-## Description📌
+`MainComponent` имеет `props` по умолчанию на случай, когда в компонент не будут переданы входящие `props`.    
+`ChildComponent` мемоизирован, но мемоизация не работает, **если `ChildComponent` каждый раз получает родительские `props` по умолчанию**.
 
-`MainComponent` has default `props`.    
-`ChildComponent` is memoized by `React.memo` *HOC*, but this memoization doesn't work when `ChildComponent` always receives `MainComponent`'s default `props`.
+## Задание📝
 
-## TODO📝
+Сделайте так, чтобы мемоизация работала.
 
-Make `ChildComponent`'s memoization works **even when `ChildComponent` receives `MainComponent`'s default `props`**
+## Условия❗️
 
-## Conditions❗️
-
- * without using class components
+ * не использовать классовые компоненты

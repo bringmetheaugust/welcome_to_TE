@@ -9,7 +9,7 @@ class MainComponent extends Component {
         return (
             <>
                 <button onClick={this.toggleChildVisibility}>toggle child component</button>
-                <ChildComponent ref={this.myRef} />  {/* set ref for controlling child component */}
+                <ChildComponent ref={this.myRef} />  {/* set ref to controll child component */}
             </>
         );
     }

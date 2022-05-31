@@ -15,4 +15,4 @@
 
 ***
 
-##### [Ссылку на песочницу](https://codesandbox.io/s/task-2-k8wje6?file=/src/taskComponents.tsx)
+##### [Ссылку на песочницу](https://codesandbox.io/s/task-3-t4gor5?file=/src/taskComponents.tsx)

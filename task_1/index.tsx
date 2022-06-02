@@ -1,19 +1,30 @@
 import { Component } from 'react';
 
-type IProps = {
+type IUser = {
     name: string
     age: number
 }
 
+type IProps = {
+    user: IUser
+}
+
 // functional component
-const FirstComponent = ({ name, age }: IProps) => (
+const FirstComponent = ({ name, age }: IUser) => (
+    <div>
+        my name is {name}, my age is {age}
+    </div>
+);
+
+// functional component
+const SecondComponent = ({ user: { name, age } }: IProps) => (
     <div>
         my name is {name}, my age is {age}
     </div>
 );
 
 // class component
-class SecondComponent extends Component<IProps> {    
+class ThirdComponent extends Component<IUser> {
     render() {
         return (
             <div>
@@ -24,7 +35,7 @@ class SecondComponent extends Component<IProps> {
 }
 
 // class component
-class ThirdComponent extends Component<{ user: IProps }> {
+class FourthComponent extends Component<IProps> {
     render() {
         return (
             <div>

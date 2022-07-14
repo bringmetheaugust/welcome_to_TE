@@ -6,7 +6,7 @@ import { IProps } from "./interface";
 
 // memoized component
 const ChildComponent = memo(({ makeLog }: IProps) => {
-  console.log("ChildComponent has been updated. Memoization is not working.");
+  console.log("ChildComponent has been updated. Memoization is working now.");
   return (
     <button className="btn btn-info" onClick={makeLog}>
       say Hi from ChildComponent

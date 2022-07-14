@@ -1,48 +1,39 @@
-import { useState } from "react";
+// ФАЙЛ ДЛЯ РЕДАКТИРОВАНИЯ И ТЕСТИРОВАНИЯ КОМПОНЕНТОВ ИЗ ТЕСТОВОГО ЗАДАНИЯ
 
-export const Block1 = ({ mouseEnterCallbak, imgSrc, imgAlt }) => {
+import { useState, useEffect } from "react";
+
+export const Block = ({
+  mouseEnterCallbak,
+  imgSrc,
+  imgAlt,
+  content,
+  userData,
+}) => {
   const [isActive, setActive] = useState(false);
+  const [res, setRes] = useState();
 
   const mouseEnterHandler = () => {
     setActive(true);
     mouseEnterCallbak();
   };
 
-  return (
-    <div onMouseEnter={mouseEnterHandler} className={isActive ? "active" : ""}>
-      <img src={imgSrc} alt={imgAlt} />
-    </div>
-  );
-};
-
-export const Block2 = ({ mouseEnterCallbak, content }) => {
-  const [isActive, setActive] = useState(false);
-
-  const mouseEnterHandler = () => {
-    setActive(true);
-    mouseEnterCallbak();
-  };
-
-  return (
-    <div onMouseEnter={mouseEnterHandler} className={isActive ? "active" : ""}>
-      <p>{content}</p>
-    </div>
-  );
-};
-
-export const Block3 = ({ mouseEnterCallbak, userData }) => {
-  const [isActive, setActive] = useState(false);
-
-  const mouseEnterHandler = () => {
-    setActive(true);
-    mouseEnterCallbak();
-  };
+  useEffect(() => {
+    if (imgSrc) {
+      setRes(<img src={imgSrc} alt={imgAlt} />);
+    } else if (content) {
+      setRes(<p>{content}</p>);
+    } else if (userData) {
+      setRes(
+        <address>
+          country: {userData.country}, street: {userData.street}
+        </address>
+      );
+    }
+  }, [content, imgSrc, userData, imgAlt]);
 
   return (
     <div onMouseEnter={mouseEnterHandler} className={isActive ? "active" : ""}>
-      <address>
-        country: {userData.country}, street: {userData.street}
-      </address>
+      {res}
     </div>
   );
 };

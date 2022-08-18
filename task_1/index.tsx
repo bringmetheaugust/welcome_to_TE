@@ -1,4 +1,4 @@
-import { Component } from 'react';
+import React, { PureComponent, Component } from 'react';
 
 type IUser = {
     name: string
@@ -9,22 +9,39 @@ type IProps = {
     user: IUser
 }
 
+const isPropsEqual = (prevProps: IProps, nextProps: IProps) => {
+    if (
+        prevProps.user.name === nextProps.user.name ||
+        prevProps.user.age === nextProps.user.age
+    ) {
+        return true;
+    }
+
+    return false;
+};
+
 // functional component
-const FirstComponent = ({ name, age }: IUser) => (
+const FirstFunctionalComponent = ({ name, age }: IUser) => (
     <div>
         my name is {name}, my age is {age}
     </div>
 );
 
+const FirstComponent = React.memo(FirstFunctionalComponent);
+
+
 // functional component
-const SecondComponent = ({ user: { name, age } }: IProps) => (
+const SecondFunctionalComponent = ({ user: { name, age } }: IProps) => (
     <div>
         my name is {name}, my age is {age}
     </div>
 );
+
+const SecondComponent = React.memo(SecondFunctionalComponent, isPropsEqual);
+
 
 // class component
-class ThirdComponent extends Component<IUser> {
+class ThirdComponent extends PureComponent<IUser> {
     render() {
         return (
             <div>
@@ -36,6 +53,16 @@ class ThirdComponent extends Component<IUser> {
 
 // class component
 class FourthComponent extends Component<IProps> {
+    shouldComponentUpdate(nextProps: IProps, nextState: IProps) {
+        if (
+          this.props.user.name === nextProps.user.name ||
+          this.props.user.age === nextProps.user.age
+        ) {
+          return false;
+        }
+        return true;
+      }
+
     render() {
         return (
             <div>

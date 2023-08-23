@@ -13,6 +13,6 @@
  * функциональные компоненты должны оставаться функциональными
  * классовые компоненты должны оставаться классовыми
 
-****
+<!-- ****
 
-##### [Ссылка на песочницу](https://codesandbox.io/s/task-1-p6xgo9?file=/src/taskComponents.tsx)
+##### [Ссылка на песочницу](https://codesandbox.io/s/task-1-p6xgo9?file=/src/taskComponents.tsx) -->

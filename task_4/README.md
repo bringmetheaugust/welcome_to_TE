@@ -9,6 +9,6 @@
 
 Оптимизируйте код.
 
-***
+<!-- ***
 
-##### [Ссылка на песочницу](https://codesandbox.io/s/task-4-yjbqn4?file=/src/taskComponents.jsx)
+##### [Ссылка на песочницу](https://codesandbox.io/s/task-4-yjbqn4?file=/src/taskComponents.jsx) -->

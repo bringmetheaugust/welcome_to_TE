@@ -13,6 +13,6 @@
 Сделайте правку, чтобы после загрузки и рендера первого компонента, второй - после нажатия на кнопку `Show ComponentTwo`
 отображался сразу без состояния загрузки.
 
-***
+<!-- ***
 
-##### [Ссылка на песочницу](https://codesandbox.io/p/sandbox/task-8-7hxwtm?file=%2Fapp%2Fpage.tsx%3A1%2C1)
+##### [Ссылка на песочницу](https://codesandbox.io/p/sandbox/task-8-7hxwtm?file=%2Fapp%2Fpage.tsx%3A1%2C1) -->

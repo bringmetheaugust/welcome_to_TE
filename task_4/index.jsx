@@ -1,28 +1,48 @@
-import { Component, createRef } from 'react';
+import { useState } from "react";
 
-class MainComponent extends Component {
-    myRef = createRef(); // create simple ref
+export const Block1 = ({ mouseEnterCallbak, imgSrc, imgAlt }) => {
+  const [isActive, setActive] = useState(false);
 
-    toggleChildVisibility = () => this.myRef.current.toggleButton(); // method to hide or show child component
+  const mouseEnterHandler = () => {
+    setActive(true);
+    mouseEnterCallbak();
+  };
 
-    render() {
-        return (
-            <>
-                <button onClick={this.toggleChildVisibility}>toggle child component</button>
-                <ChildComponent ref={this.myRef} />  {/* set ref to controll child component */}
-            </>
-        );
-    }
+  return (
+    <div onMouseEnter={mouseEnterHandler} className={isActive ? "active" : ""}>
+      <img src={imgSrc} alt={imgAlt} />
+    </div>
+  );
 };
 
-class ChildComponent extends Component {
-    state = { isActive: true };
+export const Block2 = ({ mouseEnterCallbak, content }) => {
+  const [isActive, setActive] = useState(false);
 
-    toggleButton = () => this.setState({ isActive: !this.state.isActive });
+  const mouseEnterHandler = () => {
+    setActive(true);
+    mouseEnterCallbak();
+  };
 
-    render() {
-        return (
-            this.state.isActive ? <div>child component</div> : null
-        );
-    }
+  return (
+    <div onMouseEnter={mouseEnterHandler} className={isActive ? "active" : ""}>
+      <p>{content}</p>
+    </div>
+  );
+};
+
+export const Block3 = ({ mouseEnterCallbak, userData }) => {
+  const [isActive, setActive] = useState(false);
+
+  const mouseEnterHandler = () => {
+    setActive(true);
+    mouseEnterCallbak();
+  };
+
+  return (
+    <div onMouseEnter={mouseEnterHandler} className={isActive ? "active" : ""}>
+      <address>
+        country: {userData.country}, street: {userData.street}
+      </address>
+    </div>
+  );
 };

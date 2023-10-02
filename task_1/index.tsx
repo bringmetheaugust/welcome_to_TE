@@ -17,6 +17,7 @@ const FirstComponent = ({ name, age }: IUser) => (
 );
 
 // functional component
+// Этот компонент является необязательным для выполнения задания, но продемонстрирует глубину знаний в React.
 const SecondComponent = ({ user: { name, age } }: IProps) => (
     <div>
         my name is {name}, my age is {age}
